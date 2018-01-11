@@ -1,0 +1,24 @@
+body {
+  background-color: #283C3C;
+  color: white;
+  font-family: "Courier New", "Noto Sans CJK TC Thin";
+  margin: 0;
+}
+.site-head-block {
+  background: #CE634E;
+  display: inline-block;
+  padding: 2px;
+  margin: 2px;
+  si
+}
+#site-body {
+  background: #324E49;
+  padding: 50px;
+}
+#content {
+  margin: auto;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 500px;
+  text-align: left;
+}
