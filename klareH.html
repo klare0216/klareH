@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 	<head>
+		<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 		<title> KlareH's WebSite </title>
 		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js'></script>
-		<link rel="stylesheet" type="text/css" href="main.css"
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script src='./title.js'></script>
+		<script>
+			var app = angular.module('myApp', []);
+			app.controller('myCtrl', function($scope){
+				$scope.branches = [
+					{name:'About KlareH'},
+					{name:'Projects'},
+					{name:'Works'},
+					{name:'Blogs'}
+				];
+			});
+		</script>
+		<link rel="stylesheet" type="text/css" href="main.css">
 	</head>
+
 	<body>
 		<!-- site-head -->
 		<div id="site-head">
 			<div class="site-head" id="site-title">
-				<h1>KlareH's Site 廠站</h1>
+				<h1></h1>
+
+				<div id='svg'></div>
 			</div>
+
 			<!-- site-list -->
-			<div class="site-head" id="site-list">
-				<div ng-app="" ng-init="branches=['AboutKH', 'Projects', 'Works', 'Blogs']">
-					 <div ng-repeat="x in branches" class="site-head site-head-block">{{ x }}</div>
+			<div id="site-list">
+				<div ng-app="myApp" ng-controller="myCtrl">
+					 <div ng-repeat="x in branches" class="site-head site-head-block">
+						 <div id="list-text">{{ x.name }}</div>
+					 </div>
 				</div>
 			</div>
 		</div>
+
 		<!-- site-body -->
 		<div id="site-body">
 			<div class="site-body" id="content">

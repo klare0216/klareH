@@ -9,7 +9,21 @@ body {
   display: inline-block;
   padding: 2px;
   margin: 2px;
-  si
+  width: 150px;
+}
+
+#list-text {
+  margin: auto;
+}
+
+.site-head-block:hover {
+  background: #2ED184;
+  cursor: pointer;
+}
+#site-list{
+  margin: auto;
+  text-align: center;
+    z-index: 200;
 }
 #site-body {
   background: #324E49;
@@ -21,4 +35,10 @@ body {
   margin-right: 20%;
   height: 500px;
   text-align: left;
+}
+#svg {
+  margin: auto;
+  margin-top: 80px;
+  height: 371px;
+  text-align: center;
 }
