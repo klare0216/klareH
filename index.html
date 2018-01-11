@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+	<head>
+		<title> KlareH's WebSite </title>
+		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js'></script>
+		<link rel="stylesheet" type="text/css" href="main.css"
+	</head>
+	<body>
+		<!-- site-head -->
+		<div id="site-head">
+			<div class="site-head" id="site-title">
+				<h1>KlareH's Site 廠站</h1>
+			</div>
+			<!-- site-list -->
+			<div class="site-head" id="site-list">
+				<div ng-app="" ng-init="branches=['AboutKH', 'Projects', 'Works', 'Blogs']">
+					 <div ng-repeat="x in branches" class="site-head site-head-block">{{ x }}</div>
+				</div>
+			</div>
+		</div>
+		<!-- site-body -->
+		<div id="site-body">
+			<div class="site-body" id="content">
+				test
+			</div>
+		</div>
+		<!-- site-foot -->
+		<div class="site-foot">
+		</div>
+	</body>
+</html>
