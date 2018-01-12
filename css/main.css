@@ -13,16 +13,26 @@ body {
   width: 150px;
   text-decoration: none;
   color: white;
+  -webkit-transition-property: background-color;
+  -webkit-transition-duration: 1s;
+  -o-transition-property:  background-color;
+  -o-transition-duration: 1s;
+}
+
+
+.site-head-block:hover {
+  background: #2ED184;
+  cursor: pointer;
+  -webkit-transition-property: background-color;
+  -webkit-transition-duration: 1s;
+  -o-transition-property:  background-color;
+  -o-transition-duration: 1s;
 }
 
 #list-text {
   margin: auto;
 }
 
-.site-head-block:hover {
-  background: #2ED184;
-  cursor: pointer;
-}
 #site-list{
   margin: auto;
   text-align: center;

@@ -2,39 +2,41 @@
 #news-table {
   display: block;
   border-collapse: collapse;
-}
+  margin: auto;
+  }
 
 .news-row {
   height: 2.5em;
-  margin: 10px;
 }
 
 .news-date, .news-title {
   border-bottom: 1px solid #ddd;
   vertical-align: bottom;
-  padding: 10px;
-  -webkit-transition-property: border-bottom;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-property: border-bottom;
-  -o-transition-duration: 0.2 s;
-}
-
-.news-title:hover {
-  border-bottom: 6px solid #2ED184;
-  -webkit-transition-property: border-bottom;
-  -webkit-transition-duration: 0.1s;
-  -o-transition-property: border-bottom;
-  -o-transition-duration: 0.1s;
+  padding: 5px;
 }
 
 .news-date-text {
-  font-size: 0.9em;
+  font-size: 0.7em;
   background-color: #2ED184;
   color: #342d3c;
-  padding: 2px 20px 1px 20px;
+  padding: 2px 15px 2px 15px;
 }
 
 .news-title {
-    margin: 2px;
-    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 1px;
+    font-size: 0.9em;
+    -webkit-transition-property: border-bottom, color;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-property: border-bottom, color;
+    -o-transition-duration: 0.2 s;
+}
+
+.news-title:hover {
+  border-bottom: 4px solid #2ED184;
+  color: rgba(229, 166, 154, 1);
+  -webkit-transition-property: border-bottom, color;
+  -webkit-transition-duration: 0.1s;
+  -o-transition-property: border-bottom, color;
+  -o-transition-duration: 0.1s;
 }
