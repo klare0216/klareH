@@ -7,70 +7,39 @@
 		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js'></script>
 		<script src="libs\angular-route.min.js"></script>
 		<script src="https://d3js.org/d3.v4.min.js"></script>
-
-		<script src='./title.js'></script>
-		<script>
-			var app = angular.module('myApp', ['ngRoute']);
-
-			app.filter('isEnable', function() {
-			    return function(x) {
-							var ret = [];
-							for (var i = 0; i < x.length; i++) {
-							   	if (x[i].enable != 't') {
-							        continue;
-							    }
-							    ret.push(x[i]);
-							}
-							return ret;
-			    };
-			});
-
-			app.controller('myCtrl', function($scope){
-				$scope.branches = [
-					{name:'About KlareH', enable:'t'},
-					{name:'Projects', enable:'t'},
-					{name:'Works', enable:'t'},
-					{name:'Blogs', enable:'t'},
-					{name:'News', enable:'t'}
-				];
-			});
-
-			app.config(function($routeProvider) {
-				$routeProvider.when("/",{ templateUrl : "about_kh.html"})
-											.when("/About KlareH",{ templateUrl : "about_kh.html"})
-											.when("/Projects",{ templateUrl : "projects.html"})
-											.when("/Works",{ templateUrl : "works.html"})
-											.when("/Blogs",{ templateUrl : "blogs.html"})
-											.when("/News",{ templateUrl : "news.html"});
-			});
-
-		</script>
-
+		<script src='.\title.js'></script>
+		<script src='.\main-control.js'></script>
+		<script src='.\news-control.js'></script>
 		<link rel="stylesheet" type="text/css" href="main.css">
 	</head>
 
 	<body>
-		<div ng-app="myApp" ng-controller="myCtrl">
-			<!-- site-head -->
+		<!-- site-head & site-body -->
+		<div ng-app="main" ng-controller="list">
+
+			<!-- site-head : site-list-->
 			<div id="site-head">
+
 				<div class="site-head" id="site-title">
 					<div id='svg'></div>
 				</div>
+
 				<!-- site-list -->
 				<div id="site-list">
 						 <a ng-repeat="x in branches | isEnable" class="site-head site-head-block" href="#!{{x.name}}">
 							 <div id="list-text">{{ x.name }}</div>
 						 </a>
 				</div>
+
 			</div>
-			<!-- site-body -->
+
+			<!-- site-body : content -->
 			<div id="site-body">
 				<div ng-view class="site-body" id="content"></div>
 			</div>
-		</div>
 
-		<!-- site-foot -->
-		<div class="site-foot">
 		</div>
+		<!-- site-foot -->
+		<div class="site-foot"></div>
 	</body>
 </html>
