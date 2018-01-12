@@ -1,8 +1,15 @@
-<!DOCTYPE html>
-<html>
+
+<h1> News </h1>
 
 
-<body>
-  news
-</body>
-</html>
+<div ng-app="main" ng-controller="news">
+  <div id="news-list">
+       <table id="news-table">
+         <tr ng-repeat="x in titles" class="news-row">
+           <td class="news-date"> <div class="news-date-text"> {{ x.date }} </div> </td>
+           <td class="news-title"> {{ x.title }} </td>
+         </tr>
+       </table>
+  </div>
+
+</div>

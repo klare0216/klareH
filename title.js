@@ -14,20 +14,39 @@ svg.append('rect')
     .style('fill','#2ED184');
 
 svg.append('text')
-    .text('又目日')
+    .text('目日')
     .attr('y', 100)
-    .attr('font-size',45)
-    .style('fill', '#283C3C')
+    .attr('font-size',75)
+    .style('fill', '#342d3c')
     .style('font-family', '新細明體')
     .style('font-weight', 'bolder')
-    .attr('transform', 'translate(56,155) rotate(-90)');
+    .attr('transform', 'translate(140,217) rotate(-90)');
+
+svg.append('text')
+    .text('目目目')
+    .attr('y', 100)
+    .attr('font-size',45)
+    .style('fill', '#342d3c')
+    .style('font-family', '新細明體')
+    .style('font-weight', 'bolder')
+    .attr('transform', 'translate(-77,237) rotate(-90)');
+
+svg.append('text')
+    .text('目目目')
+    .attr('y', 100)
+    .attr('font-size',45)
+    .style('fill', '#342d3c')
+    .style('font-family', '新細明體')
+    .style('font-weight', 'bolder')
+    .attr('transform', 'translate(-27,237) rotate(-90)');
+
 svg.append('text')
     .text('KlareH')
     .attr('y', 100)
     .attr('font-size',18)
-    .style('fill', '#283C3C')
+    .style('fill', '#342d3c')
     .style('font-family', 'Courier New')
-    .attr('transform', 'translate(238,160) rotate(90)');
+    .attr('transform', 'translate(188,130) rotate(90)');
     /*
 
   svg.append('rect')
