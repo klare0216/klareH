@@ -1,0 +1,30 @@
+
+.galary img, div .galary {
+  padding: 10px;
+  width: 8em;
+}
+
+div .galary {
+  display: inline-block;
+  margin: 0px;
+}
+
+.galary img{
+  -webkit-transition-property: width;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-property:  width;
+  -o-transition-duration: 0.25s;
+}
+
+.galary img:hover {
+
+  width: 7.7em;
+  -webkit-transition-property:  width;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-property: width;
+  -o-transition-duration: 0.25s;
+}
+
+div .galary:active {
+
+}

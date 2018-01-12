@@ -1,0 +1,54 @@
+body {
+  background-color: #342d3c;
+  color: white;
+  font-family: "Courier New", "Noto Sans CJK TC Thin";
+  margin: 0;
+}
+
+.site-head-block {
+  background: #CE634E;
+  display: inline-block;
+  padding: 2px;
+  margin: 2px;
+  width: 150px;
+  text-decoration: none;
+  color: white;
+}
+
+#list-text {
+  margin: auto;
+}
+
+.site-head-block:hover {
+  background: #2ED184;
+  cursor: pointer;
+}
+#site-list{
+  margin: auto;
+  text-align: center;
+    z-index: 200;
+}
+#site-body {
+  background: rgb(120, 198, 152, 0.05);
+  padding: 50px;
+}
+#content {
+  margin: auto;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 500px;
+  text-align: left;
+}
+#svg {
+  margin: auto;
+  margin-top: 80px;
+  height: 371px;
+  text-align: center;
+}
+h2 {
+  background-color: rgba(46, 209, 132, 1);
+  color: #342d3c;
+  padding: 2px;
+  display: inline-block;
+  font-size: 20px;
+}

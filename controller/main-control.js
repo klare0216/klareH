@@ -19,9 +19,9 @@ app_main.controller('list', function($scope){
   $scope.branches = [
     {name:'About KlareH', enable:'f'},
     {name:'Projects', enable:'f'},
-    {name:'Works', enable:'f'},
+    {name:'Works', enable:'t'},
     {name:'Blogs', enable:'f'},
-    {name:'Update', enable:'t'}
+    {name:'News', enable:'t'}
   ];
 });
 
@@ -31,5 +31,5 @@ app_main.config(function($routeProvider) {
                 .when("/Projects",{ templateUrl : "projects.html"})
                 .when("/Works",{ templateUrl : "works.html"})
                 .when("/Blogs",{ templateUrl : "blogs.html"})
-                .when("/Update",{ templateUrl : "news.html"});
+                .when("/News",{ templateUrl : "news.html"});
 });
