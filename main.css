@@ -10,6 +10,8 @@ body {
   padding: 2px;
   margin: 2px;
   width: 150px;
+  text-decoration: none;
+  color: white;
 }
 
 #list-text {
