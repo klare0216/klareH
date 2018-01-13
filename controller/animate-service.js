@@ -15,8 +15,8 @@ app_main.service('animate', function(){
 
     d3.select('#rect')
       .transition()
-      .delay(400)
-      .duration(400)
+      .delay(200)
+      .duration(500)
       .style('fill', palette[i%palette.length].rect);
 
     d3.select('body')
