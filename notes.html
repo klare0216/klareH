@@ -1,0 +1,13 @@
+<h1> { Notes 筆記 } </h1>
+<div ng-app="main" ng-controller="notes">
+  <div>
+       <table id="notes-table">
+         <tr class="notes-class"> <td>On HackMD </td></tr>
+         <tr ng-repeat="x in hackmd" class="notes-row">
+           <td>
+             <a href="{{ x.link }}" target="_blank" class="notes-title"> {{ x.title }} </a>
+           </td>
+         </tr>
+  </div>
+
+</div>

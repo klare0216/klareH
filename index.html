@@ -3,17 +3,21 @@
 
 	<head>
 		<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title> 廠站 - KlareH </title>
-		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js'></script>
+		<script src='libs\angular.min.js'></script>
 		<script src="libs\angular-route.min.js"></script>
-		<script src="https://d3js.org/d3.v4.min.js"></script>
-		<script src='.\title.js'></script>
+		<script src="libs\d3.min.js"></script>
+		<script src='title.js'></script>
 		<script src='controller\main-control.js'></script>
-		<script src='controller\news-control.js'></script>
+		<script src='controller\animate-service.js'></script>
+		<script src='controller\notes-control.js'></script>
 		<script src='controller\works-control.js'></script>
+		<script src='controller\news-control.js'></script>
 		<link rel="stylesheet" type="text/css" href="css\main.css">
 		<link rel="stylesheet" type="text/css" href="css\news.css">
 		<link rel="stylesheet" type="text/css" href="css\works.css">
+		<link rel="stylesheet" type="text/css" href="css\notes.css">
 	</head>
 
 	<body>
@@ -29,7 +33,7 @@
 
 				<!-- site-list -->
 				<div id="site-list">
-						 <a ng-repeat="x in branches | isEnable" class="site-head site-head-block" href="#!{{x.name}}">
+						 <a ng-repeat="x in branches | isEnable" class="site-head site-head-block" href="#!/{{x.name+'/'+x.style}}">
 							 <div id="list-text">{{ x.name }}</div>
 						 </a>
 				</div>

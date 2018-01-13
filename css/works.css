@@ -10,25 +10,13 @@ div .galary {
 }
 
 .galary img{
-  -webkit-filter: opacity(30%); /* Safari */
-  filter: opacity(30%);
-  -webkit-transition : -webkit-filter 1s linear
-  -webkit-transition-property: width;
-  -webkit-transition-duration: 0.25s;
-  -o-transition-property:  width;
-  -o-transition-duration: 0.25s;
+  -webkit-filter: opacity(100%); /* Safari */
+  filter: opacity(100%);
+  -webkit-transition : -webkit-filter 0.3s linear
 }
 
 .galary img:hover {
-  -webkit-filter: opacity(100%); /* Safari */
-  filter: opacity(100%);
-  -webkit-transition : -webkit-filter 1s linear
-  -webkit-transition-property:  width;
-  -webkit-transition-duration: 0.25s;
-  -o-transition-property: width;
-  -o-transition-duration: 0.25s;
-}
-
-div .galary:active {
-
+  -webkit-filter: opacity(30%); /* Safari */
+  filter: opacity(30%);
+  -webkit-transition : -webkit-filter 0.3s linear
 }

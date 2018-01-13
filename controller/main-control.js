@@ -15,21 +15,47 @@ app_main.filter('isEnable', function() {
     };
 });
 
+
+
 app_main.controller('list', function($scope){
   $scope.branches = [
-    {name:'About KlareH', enable:'f'},
-    {name:'Projects', enable:'f'},
-    {name:'Works', enable:'t'},
-    {name:'Blogs', enable:'f'},
-    {name:'Update Log', enable:'t'}
+    {name:'About KlareH', style:'0', enable:'f'},
+    {name:'Projects', style:'2', enable:'f'},
+    {name:'Works', style:'0', enable:'t'},
+    {name:'Notes', style:'4', enable:'t'},
+    {name:'Blogs', style:'5', enable:'f'},
+    {name:'Update Log', style:'6', enable:'t'}
   ];
 });
 
-app_main.config(function($routeProvider) {
-  $routeProvider.when("/",{ templateUrl : "works.html"})
-                .when("/About KlareH",{ templateUrl : "about_kh.html"})
-                .when("/Projects",{ templateUrl : "projects.html"})
-                .when("/Works",{ templateUrl : "works.html"})
-                .when("/Blogs",{ templateUrl : "blogs.html"})
-                .when("/Update Log",{ templateUrl : "news.html"});
-});
+function tmp(){
+  console.log('tmp');
+}
+
+function rect_change(i) {
+  console.log("rect_change");
+
+}
+
+
+
+app_main.config(['$routeProvider', function($routeProvider) {
+  $routeProvider.when("/About KlareH/:param",{ templateUrl : "about_kh.html", controller: 'change_bg'})
+                .when("/Projects/:param",{ templateUrl : "projects.html", controller: 'change_bg'})
+                .when("/Works/:param",{
+                  templateUrl : "works.html",
+                  controller: 'change_bg'
+                })
+                .when("/Blogs/:param",{ templateUrl : "blogs.html", controller: 'change_bg'})
+                .when("/Update Log/:param",{
+                  templateUrl: "news.html",
+                  controller: 'change_bg',
+                })
+                .when("/Notes/:param",{
+                  templateUrl: "notes.html",
+                  controller: 'change_bg',
+                })
+                .otherwise({
+                    redirectTo: '/'
+                });
+}]);

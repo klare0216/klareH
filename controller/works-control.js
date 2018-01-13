@@ -7,7 +7,5 @@ app_main.controller('works', function($scope){
     { src: 'https://images.plurk.com/5xLtDwqvhyQ6Um3yuw3Q.png', text: '樹懶'},
     { src: 'https://images.plurk.com/6xODq1PljqoXl173uw3Q.png', text: '胖鴨'},
     { src: 'https://images.plurk.com/38Oxme2SV7MGmV9Huw3Q.png', text: 'H兔玩偶'}
-
   ];
 });
-console.log('works');
