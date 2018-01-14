@@ -1,10 +1,9 @@
-@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 @import url(//fonts.googleapis.com/earlyaccess/cwtexming.css);
 
 body {
   background-color: #342d3c;
   color: white;
-  font-family: "Cutive Mono","cwTeXMing", "Noto Sans CJK TC Thin";
+  font-family: Courier,"cwTeXMing", "Noto Sans CJK TC Thin";
   margin: 0;
 }
 
@@ -76,6 +75,7 @@ body {
   height: 371px;
   text-align: center;
 }
+
 
 h2 {
   background-color: #78c698;

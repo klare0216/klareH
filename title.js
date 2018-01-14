@@ -58,7 +58,7 @@ svg.append('text')
     .attr('y', 100)
     .attr('font-size',18)
     .style('fill', '#342d3c')
-    .style('font-family', 'Cutive Mono')
+    .style('font-family', 'Courier')
     .attr('transform', 'translate(188,100) rotate(90)');
 
 
