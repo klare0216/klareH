@@ -22,7 +22,7 @@ svg.append('text')
     .attr('y', 100)
     .attr('font-size',85)
     .style('fill', '#342d3c')
-    .style('font-family', 'cwTeXMing')
+    .style('font-family', '新細明體')
     .style('font-weight', 'bolder')
     .attr('transform', 'translate(150,217) rotate(-90)');
 
@@ -31,7 +31,7 @@ svg.append('text')
     .attr('y', 100)
     .attr('font-size',85)
     .style('fill', '#342d3c')
-    .style('font-family', 'cwTeXMing')
+    .style('font-family', '新細明體')
     .style('font-weight', 'bolder')
     .attr('transform', 'translate(170,141) rotate(-90)');
 
@@ -40,7 +40,7 @@ svg.append('text')
     .attr('y', 100)
     .attr('font-size',45)
     .style('fill', '#342d3c')
-    .style('font-family', 'cwTeXMing')
+    .style('font-family', '新細明體')
     .style('font-weight', 'bolder')
     .attr('transform', 'translate(-77,237) rotate(-90)');
 
@@ -49,7 +49,7 @@ svg.append('text')
     .attr('y', 100)
     .attr('font-size',45)
     .style('fill', '#342d3c')
-    .style('font-family', 'cwTeXMing')
+    .style('font-family', '新細明體')
     .style('font-weight', 'bolder')
     .attr('transform', 'translate(-27,237) rotate(-90)');
 

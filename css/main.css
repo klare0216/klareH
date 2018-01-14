@@ -1,9 +1,9 @@
-@import url(//fonts.googleapis.com/earlyaccess/cwtexming.css);
+
 
 body {
   background-color: #342d3c;
   color: white;
-  font-family: Courier,"cwTeXMing", "Noto Sans CJK TC Thin";
+  font-family: Courier,"Noto Sans CJK TC Thin", "新細明體";
   margin: 0;
 }
 
