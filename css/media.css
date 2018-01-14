@@ -1,0 +1,60 @@
+
+@media only screen and (max-width: 700px) and (min-width: 500px) {
+  #content {
+    margin: auto;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: left;
+  }
+
+  h1 {
+    padding: 2px;
+    font-size: 20px;
+  }
+  h2 {
+    padding: 2px;
+    font-size: 18px;
+  }
+
+  #news-table, #notes-table {
+    margin-left: 0em;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  #content {
+    margin: auto;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: left;
+  }
+
+  h1 {
+    padding: 2px;
+    font-size: 20px;
+  }
+  h2 {
+    padding: 2px;
+    font-size: 18px;
+  }
+
+  #news-table, #notes-table {
+    margin-left: 0em;
+  }
+
+  #logo {
+    transform: scale(1);
+  }
+
+  #svg {
+      height: 350px;
+  }
+
+  .site-head-block {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}

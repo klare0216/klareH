@@ -4,6 +4,7 @@ var svg = d3.select('#svg')
           .append('svg')
           .attr('height', 285)
           .attr('width', 285)
+          .attr('id', 'logo')
           .style('z-index', 1);
 
 svg.attr('transform','scale(1.3)');
@@ -19,20 +20,20 @@ rect.attr('id', 'rect')
 svg.append('text')
     .text('目')
     .attr('y', 100)
-    .attr('font-size',75)
+    .attr('font-size',85)
     .style('fill', '#342d3c')
     .style('font-family', '新細明體')
     .style('font-weight', 'bolder')
-    .attr('transform', 'translate(140,217) rotate(-90)');
+    .attr('transform', 'translate(150,217) rotate(-90)');
 
 svg.append('text')
     .text('日')
     .attr('y', 100)
-    .attr('font-size',75)
+    .attr('font-size',85)
     .style('fill', '#342d3c')
     .style('font-family', '新細明體')
     .style('font-weight', 'bolder')
-    .attr('transform', 'translate(140,141) rotate(-90)');
+    .attr('transform', 'translate(170,141) rotate(-90)');
 
 svg.append('text')
     .text('目目目')

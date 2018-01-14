@@ -18,6 +18,7 @@
 		<link rel="stylesheet" type="text/css" href="css\news.css">
 		<link rel="stylesheet" type="text/css" href="css\works.css">
 		<link rel="stylesheet" type="text/css" href="css\notes.css">
+		<link rel="stylesheet" type="text/css" href="css\media.css">
 	</head>
 
 	<body>
@@ -26,18 +27,16 @@
 
 			<!-- site-head : site-list-->
 			<div id="site-head">
-
+				<!-- site-logo -->
 				<div class="site-head" id="site-title">
 					<div id='svg'></div>
 				</div>
-
 				<!-- site-list -->
 				<div id="site-list">
 						 <a ng-repeat="x in branches | isEnable" class="site-head site-head-block" href="#!/{{x.name+'/'+x.style}}">
 							 <div id="list-text">{{ x.name }}</div>
 						 </a>
 				</div>
-
 			</div>
 
 			<!-- site-body : content -->
@@ -46,7 +45,10 @@
 			</div>
 
 		</div>
+
 		<!-- site-foot -->
-		<div class="site-foot"></div>
+		<div id="site-foot">
+			<div class="site-foot-text"> 廠站 since 2018 </div>
+		</div>
 	</body>
 </html>
