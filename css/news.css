@@ -15,7 +15,7 @@
 }
 
 .news-date-text {
-  font-size: 0.7em;
+  font-size: 0.8em;
   background-color: #78c698;
   color: #342d3c;
   padding: 2px 15px 2px 15px;
@@ -24,7 +24,7 @@
 .news-title {
     color: rgba(255, 255, 255, 0.8);
     margin: 1px;
-    font-size: 0.9em;
+    font-size: 1em;
     -webkit-transition-property: border-bottom, color;
     -webkit-transition-duration: 0.2s;
     -o-transition-property: border-bottom, color;
