@@ -34,14 +34,14 @@
 				<!-- site-list -->
 				<div id="site-list">
 						 <a ng-repeat="x in branches | isEnable" class="site-head site-head-block" href="#!/{{x.name+'/'+x.style}}">
-							 <div id="list-text">{{ x.name }}</div>
+							 <div class="list-text">{{ x.name }}</div>
 						 </a>
 				</div>
 			</div>
 
 			<!-- site-body : content -->
 			<div id="site-body">
-				<div ng-view class="site-body" id="content"></div>
+				<div ng-view class="site-body" id="content" ></div>
 			</div>
 
 		</div>

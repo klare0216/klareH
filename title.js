@@ -61,6 +61,27 @@ svg.append('text')
     .style('font-family', 'Courier')
     .attr('transform', 'translate(188,100) rotate(90)');
 
+logo_animate();
+
+function logo_animate(){
+  rect.transition()
+  .delay(800)
+  .duration(800)
+  .attr('transform', 'translate(0,142) rotate(-45)')
+  .transition()
+  .delay(800)
+  .duration(800)
+  .attr('transform', 'translate(142,0) rotate(45)');
+  d3.select('body')
+    .transition()
+    .delay(1000)
+    .duration(1000)
+    .style('background-color', "black")
+    .transition()
+    .delay(1000)
+    .duration(1000)
+    .style('background-color', "#342d3c");
+}
 
 /*
 function rect_change(i) {
