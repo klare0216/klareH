@@ -1,9 +1,10 @@
 <h1> { Art Works } </h1>
+
 <div>
   <h2> 像素圖 Pixel Arts </h2>
   <div ng-app="main" ng-controller="works">
     <div ng-repeat="x in works" class="galary">
-       <a href="{{ x.src }}">
+       <a href="#!/Imgs/1#img-details" id="{{ 'img' + x.i }}">
          <img src ="{{ x.src }}" alt="{{ x.text }}" >
        </a>
     </div>

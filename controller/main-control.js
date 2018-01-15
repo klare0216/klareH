@@ -40,20 +40,28 @@ function rect_change(i) {
 
 
 app_main.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when("/About KlareH/:param",{ templateUrl : "about_kh.html", controller: 'change_bg'})
-                .when("/Projects/:param",{ templateUrl : "projects.html", controller: 'change_bg'})
-                .when("/Works/:param",{
+  $routeProvider.when("/About KlareH/:param", { templateUrl : "about_kh.html", controller: 'change_bg'})
+                .when("/Projects/:param", { templateUrl : "projects.html", controller: 'change_bg'})
+                .when("/Works/:param", {
                   templateUrl : "works.html",
                   controller: 'change_bg'
                 })
-                .when("/Blogs/:param",{ templateUrl : "blogs.html", controller: 'change_bg'})
-                .when("/Update Log/:param",{
+                .when("/Blogs/:param", { templateUrl : "blogs.html", controller: 'change_bg'})
+                .when("/Update Log/:param", {
                   templateUrl: "news.html",
                   controller: 'change_bg',
                 })
-                .when("/Notes/:param",{
+                .when("/Notes/:param", {
                   templateUrl: "notes.html",
                   controller: 'change_bg',
+                })
+                .when("/Imgs/:param", {
+                  templateUrl:"work-details.html",
+                  controller: "change_bg"
+                })
+                .when("/Works/:param/:scrollTo", {
+                  templateUrl : "works.html",
+                  controller: 'works'
                 })
                 .otherwise({
                     redirectTo: '/'

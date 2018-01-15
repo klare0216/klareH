@@ -20,3 +20,8 @@ div .galary {
   filter: opacity(30%);
   -webkit-transition : -webkit-filter 0.3s linear
 }
+
+#img-details {
+  display: block;
+  margin: auto;
+}

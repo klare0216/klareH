@@ -1,5 +1,4 @@
 app_main.controller('change_bg', function($scope, $routeParams, animate){
-  console.log($routeParams);
   var i = $routeParams;
   animate.rect_change(i.param);
 });

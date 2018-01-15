@@ -56,4 +56,8 @@
     width: 80%;
     margin-left: 8%;
   }
+
+  #img-details {
+    width: 100%;
+  }
 }
